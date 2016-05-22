@@ -1,0 +1,32 @@
+{% include head.html %}
+{% include header.html %}
+
+<!-- FIRST PAGE OF BLOG -->
+{% if paginator.page == 1 %}
+  {% for post in site.posts limit:1 %}
+    {% assign individualPost = false %}
+    {% include post-item.html %}
+  {% endfor %}
+  <section class="other-posts">
+      <h2 class="subsection-title">Also on the blog</h2>
+      {% include posts-list.html %}
+  </section>
+
+<!-- ALL OTHER PAGES -->
+{% else %}
+  <h2>Page {{paginator.page}} of the blog</h2>
+  {% include posts-list.html %}
+{% endif %}
+
+<!-- PAGINATION -->
+<nav class="clear pagination">
+  {% if paginator.next_page %}
+    <a class="pagination__older" href="{{ paginator.next_page_path }}">&larr; Older posts</a>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="pagination__newer" href="{{ paginator.previous_page_path }}">Newer posts &rarr;</a>
+  {% endif %}
+</nav>
+
+<script id="dsq-count-scr" src="//melanierichards.disqus.com/count.js" async></script>
+{% include footer.html %}

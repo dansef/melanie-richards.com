@@ -1,0 +1,23 @@
+<body class="body">
+
+  <header role="banner" class="clear container site-header">
+    <a class="half brand" href="/">
+      <span class="brand__name">Melanie Richards</span>
+      <span class="brand__title">Design + Development</span>
+    </a>
+    <nav class="half site-nav">
+      <ul>
+        {% assign sorted_pages = site.pages | sort:"order" %}
+        {% for item in sorted_pages %}
+          {% if item.url contains 'page' %}
+          {% else %}
+            <li>
+                <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">

@@ -1,0 +1,192 @@
+/*
+ *	BASIC LAYOUT STUFF
+ *	---------------------------------------------
+ */
+
+* {
+  margin: 0rem; /* rem so IE8 gets default margins and padding */
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font: 125%/1.325 $font-body;
+  color: $color-body;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 100rem;
+}
+
+.clear {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a:link, a:visited {
+  padding-bottom: .03em;
+  border-bottom: 1px solid;
+  text-decoration: none;
+  color: $color-link;
+
+  &:hover {
+    border-bottom-width: 2px;
+    color: $color-link-hover;
+  }
+
+  &:active {
+    color: $color-link-active;
+  }
+
+}
+
+/*
+ *	TYPE RAMP
+ *	---------------------------------------------
+ */
+
+h1, h2 {
+  font-weight: 500;
+  color: $color-headings;
+
+  a:link {
+    color: $color-headings-link;
+  }
+
+  a:hover {
+    color: $color-headings-link-hover;
+  }
+
+  a:active {
+    color: $color-link-active;
+  }
+
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2, .section-header {
+  font-size: 1.25em;
+}
+
+h3,
+.subsection-title,
+.meta-title {
+  @include all-caps;
+  font-weight: 400;
+  font-size: .925em;
+  color: $color-headings;
+}
+
+p, ul, ol {
+  margin-bottom: .625em;
+}
+
+/*
+ *	CONTENT BLOCKS
+ *	---------------------------------------------
+ */
+
+%limit-width {
+   max-width: 40rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-block {
+
+  h1, h2, h3, h4, h5, h6,
+  p, ul, ol, blockquote,
+  time,
+  pre, code,
+  > a {
+    @extend %limit-width;
+  }
+
+  h2 {
+    margin-top: 1.5em;
+  }
+
+  h3 {
+    margin-top: 2em;
+  }
+
+  strong, b {
+    font-weight: 500;
+  }
+
+  ul, ol {
+    padding-left: 1em;
+  }
+
+  li {
+    margin-bottom: .25em;
+  }
+
+  li > ul {
+    margin: .25em 0 0;
+  }
+
+  .media {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .caption {
+    font-size: 1.125rem;
+    color: $color-secondary;
+  }
+
+}
+
+/*
+ *	MEDIA QUERIES
+ *	---------------------------------------------
+ */
+
+@media (min-width: $bp-m) {
+
+  body {
+    padding: 2rem;
+    font-size: 137.5%;
+  }
+
+}
+
+@media (min-width: $bp-l) {
+
+  body {
+    padding: 3rem;
+  }
+
+}
+
+
+@media (min-width: $bp-xl) {
+
+  %limit-width {
+    max-width: 50rem;
+  }
+
+}
+
+@media (min-width: $bp-xxl) {
+
+  body {
+    padding: 2rem;
+    font-size: 150%;
+  }
+
+}

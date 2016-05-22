@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'calibre';
+  src: url('../fonts/CalibreWeb-Regular.eot');
+  src: local('☺'), /* sneakily trick IE */
+        url('../fonts/CalibreWeb-Regular.woff') format('woff'),
+        url('../fonts/CalibreWeb-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'calibre';
+  src: url('../fonts/CalibreWeb-RegularItalic.eot');
+  src: local('☺'),
+        url('../fonts/CalibreWeb-RegularItalic.woff') format('woff'),
+        url('../fonts/CalibreWeb-RegularItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'calibre';
+  src: url('../fonts/CalibreWeb-Semibold.eot');
+  src: local('☺'), /* sneakily trick IE */
+        url('../fonts/CalibreWeb-Semibold.woff') format('woff'),
+        url('../fonts/CalibreWeb-Semibold.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'calibre';
+  src: url('../fonts/CalibreWeb-Bold.eot');
+  src: local('☺'),
+        url('../fonts/CalibreWeb-Bold.woff') format('woff'),
+        url('../fonts/CalibreWeb-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}

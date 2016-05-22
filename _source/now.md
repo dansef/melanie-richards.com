@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: now
 title: Now
 permalink: /now/
 order: 4

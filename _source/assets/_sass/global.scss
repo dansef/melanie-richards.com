@@ -142,15 +142,59 @@ img {
     margin: .25em 0 0;
   }
 
-  .media {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  .media,
+  .media--web {
     max-width: 100%;
   }
 
   .caption {
     font-size: 1.125rem;
     color: $color-secondary;
+  }
+
+}
+
+/*
+ *	SPECIAL MEDIA
+ *	---------------------------------------------
+ */
+
+.media {
+  margin-top: 2rem;
+
+  & + * {
+    margin-top: 2rem;
+  }
+
+  & + .caption {
+    margin: .5rem 0 2rem;
+  }
+
+}
+
+.media--web {
+  text-align: center;
+
+  img {
+    border: 4px solid #bbb;
+    border-top-width: 20px;
+    border-radius: 4px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+.vimeo {
+  position: relative;
+  padding-bottom: 56.25%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
 }
@@ -169,6 +213,19 @@ img {
 
   .site-header .container {
     padding: 1.5rem 0;
+  }
+
+  .media--web {
+    padding: 1.5rem;
+    background: #efefef;
+  }
+
+}
+
+@media (min-width: $bp-l) {
+
+  .media--web {
+    padding: 3rem;
   }
 
 }

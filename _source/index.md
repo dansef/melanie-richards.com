@@ -39,7 +39,7 @@ Poster for The Just Love Project: Illustration / design / copywriting. This phra
 {: .caption}
 
 ![Screenshot of the Hominy Grill home page]({{ site.images }}/melanierichards-hominygrill-home-wide.jpg)
-{: .media}
+{: .media.media--web}
 
 Hominy Grill: web design
 {: .caption}

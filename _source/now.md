@@ -2,6 +2,7 @@
 layout: now
 title: Now
 permalink: /now/
+nav: true
 order: 4
 ---
 

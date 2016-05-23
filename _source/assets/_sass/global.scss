@@ -16,6 +16,10 @@ body {
   color: $color-body;
 }
 
+:focus {
+  outline: 1px dashed #000;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -159,20 +163,15 @@ img {
 @media (min-width: $bp-m) {
 
   body {
-    padding: 2rem;
+    padding: .5rem 2rem 2rem;
     font-size: 137.5%;
   }
 
-}
-
-@media (min-width: $bp-l) {
-
-  body {
-    padding: 3rem;
+  .site-header .container {
+    padding: 1.5rem 0;
   }
 
 }
-
 
 @media (min-width: $bp-xl) {
 
@@ -185,7 +184,7 @@ img {
 @media (min-width: $bp-xxl) {
 
   body {
-    padding: 2rem;
+    padding: 1.5rem 3rem 3rem;
     font-size: 150%;
   }
 

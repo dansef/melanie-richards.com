@@ -2,6 +2,7 @@
 layout: info
 title: Info
 permalink: /info/
+nav: true
 order: 3
 ---
 

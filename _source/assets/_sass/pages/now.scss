@@ -1,0 +1,23 @@
+/*
+ *	NOW PAGE
+ *	---------------------------------------------
+ */
+
+.now-credit {
+  margin-top: 2.5em;
+  padding-top: .75em;
+  border-top: $line-style;
+  font-size: 1.125rem;
+}
+
+.title--icon {
+  position: relative;
+  padding-left: 40px;
+
+  svg {
+    position: absolute;
+    left: 0;
+    margin-top: .125em;
+  }
+
+}

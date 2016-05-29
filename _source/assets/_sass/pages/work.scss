@@ -10,6 +10,17 @@
   font-size: 6vw;
   line-height: 1.25;
   color: $color-brand;
+
+  a:link, a:visited {
+    border-bottom: 4px solid;
+    color: inherit;
+  }
+
+  a:hover {
+    border-color: $color-link-hover-bg;
+    color: $color-link-hover;
+  }
+
 }
 
 .work-stream {

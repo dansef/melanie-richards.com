@@ -13,16 +13,8 @@
     transition: color ease-in-out 200ms;
   }
 
-  a:focus {
-    outline: none;
-    background: #f8d800;
-    color: #000;
-    transition: none;
-
-    &:before {
-      display: none;
-    }
-
+  a:focus:before {
+    display: none;
   }
 
   a:hover, a:active, .current {

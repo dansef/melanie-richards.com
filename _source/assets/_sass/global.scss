@@ -39,12 +39,20 @@ a:link, a:visited {
 
 a:hover {
   border-color: $color-link-hover-bg;
-  background: $color-link-hover-bg;
+  background-color: $color-link-hover-bg;
   color: $color-link-hover;
 }
 
 a:active {
   color: $color-link-hover;
+}
+
+a:focus {
+  outline: none;
+  border-color: $color-focus-bg;
+  background-color: $color-focus-bg;
+  color: #000;
+  transition: none;
 }
 
 /*
@@ -104,19 +112,6 @@ h1, h2 {
   font-weight: 500;
   line-height: 1.125;
   color: $color-headings;
-
-  a:link {
-    color: $color-headings-link;
-  }
-
-  a:hover {
-    color: $color-headings-link-hover;
-  }
-
-  a:active {
-    color: $color-link-hover;
-  }
-
 }
 
 h1 {
@@ -167,6 +162,35 @@ strong, b {
   padding-left: 0;
   list-style: none;
   max-width: 100%;
+}
+
+button,
+.btn:link, .btn:visited {
+  display: inline-block;
+  margin-top: .5em;
+  padding: .25em .75em;
+  border: 2px solid $color-brand;
+  font-size: 1em;
+  color: $color-brand;
+  transition: none;
+}
+
+button:hover,
+.btn:hover {
+  cursor: pointer;
+  background: $color-brand;
+  color: #fff;
+}
+
+button:active,
+.btn:active {
+  background: $color-focus-bg;
+  color: $color-brand;
+}
+
+.meta {
+  font-size: .75em;
+  opacity: .8;
 }
 
 /*

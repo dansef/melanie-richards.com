@@ -5,10 +5,14 @@
 {% if paginator.page == 1 %}
   {% for post in site.posts limit:1 %}
     {% assign individualPost = false %}
+    {% assign currentPost = post.url %}
     {% include post-item.html %}
   {% endfor %}
   <section class="other-posts">
-      <h2 class="subsection-title">Also on the blog</h2>
+      <h2 class="title--icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 30 26"><path fill="#F8D800" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" d="M23 24l-8-5.5L7 24V1h16z"/><path fill="none" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" d="M7 7h16"/></svg>
+        Also on the blog
+      </h2>
       {% include posts-list.html %}
   </section>
 
@@ -21,10 +25,18 @@
 <!-- PAGINATION -->
 <nav class="clear pagination">
   {% if paginator.next_page %}
-    <a class="pagination__older" href="{{ paginator.next_page_path }}">&larr; Older posts</a>
+    <a class="pagination__older" href="{{ paginator.next_page_path }}">
+      <span class="sr-only">Older posts</span>
+    </a>
+  {% else %}
+    <span class="pagination__older"></span>
   {% endif %}
   {% if paginator.previous_page %}
-    <a class="pagination__newer" href="{{ paginator.previous_page_path }}">Newer posts &rarr;</a>
+    <a class="pagination__newer" href="{{ paginator.previous_page_path }}">
+      <span class="sr-only">Newer posts</span>
+    </a>
+  {% else %}
+    <span class="pagination__newer"></span>
   {% endif %}
 </nav>
 

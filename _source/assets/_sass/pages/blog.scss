@@ -1,0 +1,178 @@
+/*
+ *	FEATURED POST
+ *	---------------------------------------------
+ */
+
+.post__title {
+  margin-bottom: 1em;
+
+  a:link, a:visited {
+    display: inline-block;
+    position: relative;
+    padding-right: 48px;
+    border-bottom: 0;
+    color: $color-brand;
+
+    &:after {
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -11px;
+      right: 14px;
+      content: '';
+      width: 28px;
+      height: 22px;
+      background: url('../images/post-arrow.svg') no-repeat;
+      transition: right ease-in-out 200ms;
+    }
+
+    &:hover:after {
+      right: 10px;
+    }
+
+  }
+
+}
+
+.post__meta {
+
+  a:link, a:visited {
+    border-bottom: 1px solid;
+    color: inherit;
+  }
+
+  a:hover {
+    border-color: $color-link-hover-bg;
+    color: $color-link-hover;
+  }
+
+}
+
+.comment-btn-wrap {
+  margin-top: 1em;
+  padding-top: .5em;
+  border-top: $line-style;
+}
+
+/*
+ *	POSTS LIST
+ *	---------------------------------------------
+ */
+
+.posts-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.post-item {
+  margin-bottom: .75em;
+}
+
+.post-item__date,
+.post-item__title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.post-item__date {
+  margin-right: 1em;
+  width: 5em;
+}
+
+a.post-item__title {
+  border-bottom: 0;
+  color: $color-brand;
+
+  span {
+    border-bottom: 2px solid currentColor;
+  }
+
+}
+
+.post-item__title:hover,
+.post-item__title:active {
+
+  span {
+    border-color: $color-link-hover-bg;
+  }
+
+}
+
+.post-item__title:focus {
+
+  span {
+    border-color: $color-focus-bg;
+  }
+
+}
+
+/*
+ *	PAGINATION
+ *	---------------------------------------------
+ */
+
+.pagination {
+  margin-top: 2em;
+}
+
+.pagination a {
+  border-bottom: 0;
+}
+
+
+.pagination__older,
+.pagination__newer {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+}
+
+span.pagination__older,
+span.pagination__newer {
+  opacity: .3;
+}
+
+.pagination__older {
+  background-image: url('../images/older.svg');
+}
+
+.pagination__newer {
+  margin-left: .5em;
+  background-image: url('../images/newer.svg');
+}
+
+
+/*
+ *	MEDIA QUERIES
+ *	---------------------------------------------
+ */
+
+@media (min-width: $bp-m) {
+
+  .post {
+    margin-bottom: 3em;
+  }
+
+  .post__meta {
+    margin-top: 1.75em;
+  }
+
+  .post__date,
+  .post__tags {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .post__date {
+    margin-right: 1em;
+  }
+
+  .comment-btn-wrap {
+    margin-top: 1.5em;
+  }
+
+  .post-item__title {
+    max-width: calc(100% - 6em);
+  }
+
+}

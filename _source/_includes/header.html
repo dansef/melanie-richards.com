@@ -2,8 +2,10 @@
 
   <header role="banner" class="site-header">
     <div class="container">
-      <svg class="brand" xmlns="http://www.w3.org/2000/svg" width="95" height="40" viewBox="0 0 95 40"><g fill="#1A7CFF"><path d="M32.9 0H7.1L20 12.9M0 32.9L12.9 20 0 7.1M40 7.1L27.1 20 40 32.9M7.1 40h25.8L20 27.1"/></g><path fill="#F84100" d="M55 0h40v40H55z"/><path fill="#F8D800" d="M95 15H80V0H70v15H55v10h15v15h10V25h15"/></svg>
-      <a class="site-name" href="/">Melanie Richards</a>
+      <a href="/">
+        <svg class="brand" xmlns="http://www.w3.org/2000/svg" width="95" height="40" viewBox="0 0 95 40"><g fill="#1A7CFF"><path d="M32.9 0H7.1L20 12.9M0 32.9L12.9 20 0 7.1M40 7.1L27.1 20 40 32.9M7.1 40h25.8L20 27.1"/></g><path fill="#F84100" d="M55 0h40v40H55z"/><path fill="#F8D800" d="M95 15H80V0H70v15H55v10h15v15h10V25h15"/></svg>
+        <span class="site-name">Melanie Richards</span>
+      </a>
       <nav class="site-nav">
         <ul>
           {% assign sorted_pages = site.pages | sort:"order" %}

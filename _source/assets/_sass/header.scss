@@ -7,7 +7,6 @@
   margin-bottom: 1.5em;
 
   a {
-    position: relative;
     border-bottom: 0;
     color: $color-brand;
     transition: color ease-in-out 200ms;
@@ -76,25 +75,6 @@
       padding: .5em 1em;
     }
 
-    a:before {
-      display: block;
-      content: '';
-      position: absolute;
-      top: -3px;
-      left: 50%;
-      margin-left: -3px;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #d63800;
-      opacity: 0;
-      transition: opacity ease-in-out 200ms;
-    }
-
-    a:hover:before, a:active:before, .current:before {
-      opacity: 1;
-    }
-
   }
 
   .brand {
@@ -118,6 +98,29 @@
 
     li:last-child {
       margin-right: -.5em;
+    }
+
+    a {
+      position: relative;
+    }
+
+    a:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: 50%;
+      margin-left: -3px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #d63800;
+      opacity: 0;
+      transition: opacity ease-in-out 200ms;
+    }
+
+    a:hover:before, a:active:before, .current:before {
+      opacity: 1;
     }
 
   }

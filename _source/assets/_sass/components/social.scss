@@ -4,11 +4,11 @@
  */
 
 .social {
-  padding-left: 0;
-  list-style: none;
+  @extend %nonstandard-list;
 
   li {
     display: inline-block;
+    vertical-align: top;
     margin-right: .5em;
   }
 

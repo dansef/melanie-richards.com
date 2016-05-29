@@ -1,0 +1,109 @@
+/*
+ *	BASIC MEDIA ELEMENTS
+ *	---------------------------------------------
+ */
+
+img,
+iframe,
+embed {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.caption {
+  font-size: 1.125rem;
+  color: $color-secondary;
+}
+
+/*
+ *	RESPONSIVE VIDEOS
+ *	---------------------------------------------
+ */
+
+.vimeo {
+  position: relative;
+  padding-bottom: 56.25%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+/*
+ *  MEDIA WRAPPERS
+ *  Because I'm too lazy to write a Jekyll plugin
+ *  to stop media from getting wrapped in p tags
+ *	---------------------------------------------
+ */
+
+.media {
+  margin-top: 2rem;
+  max-width: 100%;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  & + * {
+    margin-top: 2rem;
+  }
+
+  & + .caption {
+    margin: .5rem 0 2rem;
+  }
+
+}
+
+.media--web {
+  text-align: center;
+
+  img {
+    border: 4px solid #bbb;
+    border-top-width: 20px;
+    border-radius: 4px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+/*
+ *	MEDIA QUERIES
+ *	---------------------------------------------
+ */
+
+@media (min-width: $bp-m) {
+
+  .media--web {
+    padding: 1.5rem;
+    background: #efefef;
+  }
+
+}
+
+@media (min-width: $bp-l) {
+
+  .media {
+    margin-top: 3rem;
+
+    & + * {
+      margin-top: 3rem;
+    }
+
+    & + .caption {
+      margin-bottom: 3rem;
+    }
+
+  }
+
+  .media--web {
+    padding: 3rem;
+  }
+
+}

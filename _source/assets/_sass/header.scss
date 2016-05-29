@@ -54,7 +54,7 @@
   border-bottom: $line-style;
 
   ul {
-    list-style: none;
+    @extend %nonstandard-list;
     margin: 0 0 0 -.75rem;
   }
 

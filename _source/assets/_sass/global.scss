@@ -67,9 +67,37 @@ a:active {
 }
 
 /*
- *	TYPE RAMP
+ *	LAYOUT
  *	---------------------------------------------
  */
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 100rem;
+}
+
+.page-body {
+  margin-top: 1.5rem;
+}
+
+%limit-width {
+   max-width: 40rem;
+}
+
+/*
+ *	TYPOGRAPHY
+ *	---------------------------------------------
+ */
+
+/* Limit width of typographic elements */
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, blockquote,
+time,
+pre, code {
+  @extend %limit-width;
+}
 
 h1, h2 {
   font-weight: 500;
@@ -94,14 +122,16 @@ h1 {
   font-size: 1.5em;
 }
 
-h2, .section-header {
-  margin-bottom: 1rem;
+h2,
+.section-header {
+  margin: 1.5em 0 1rem;
   font-size: 1.25em;
 }
 
 h3,
 .subsection-title,
 .meta-title {
+  margin-top: 2em;
   @include all-caps;
   font-weight: 400;
   font-size: .925em;
@@ -113,129 +143,29 @@ p, ul, ol {
   padding: 0;
 }
 
-/*
- *	LAYOUT
- *	---------------------------------------------
- */
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-  max-width: 100rem;
+ul, ol {
+  padding-left: 1em;
 }
 
-.page-body {
-  margin-top: 1.5rem;
+li {
+  margin-bottom: .25em;
 }
 
-/*
- *	CONTENT BLOCKS
- *	---------------------------------------------
- */
-
-%limit-width {
-   max-width: 40rem;
+li > ul,
+li > ol {
+  margin: .25em 0 0;
 }
 
-img {
+strong, b {
+  font-weight: 500;
+}
+
+/* Feels a little bit icky but eh,
+   probably better than scoping to a content class */
+%nonstandard-list {
+  padding-left: 0;
+  list-style: none;
   max-width: 100%;
-  height: auto;
-}
-
-.content-block {
-
-  h1, h2, h3, h4, h5, h6,
-  p, ul, ol, blockquote,
-  time,
-  pre, code,
-  > a {
-    @extend %limit-width;
-  }
-
-  h2 {
-    margin-top: 1.5em;
-  }
-
-  h3 {
-    margin-top: 2em;
-  }
-
-  strong, b {
-    font-weight: 500;
-  }
-
-  ul, ol {
-    padding-left: 1em;
-  }
-
-  li {
-    margin-bottom: .25em;
-  }
-
-  li > ul {
-    margin: .25em 0 0;
-  }
-
-  .media,
-  .media--web {
-    max-width: 100%;
-  }
-
-  .caption {
-    font-size: 1.125rem;
-    color: $color-secondary;
-  }
-
-}
-
-/*
- *	SPECIAL MEDIA
- *	---------------------------------------------
- */
-
-.media {
-  margin-top: 2rem;
-
-  &:first-child {
-    margin-top: 0;
-  }
-
-  & + * {
-    margin-top: 2rem;
-  }
-
-  & + .caption {
-    margin: .5rem 0 2rem;
-  }
-
-}
-
-.media--web {
-  text-align: center;
-
-  img {
-    border: 4px solid #bbb;
-    border-top-width: 20px;
-    border-radius: 4px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-}
-
-.vimeo {
-  position: relative;
-  padding-bottom: 56.25%;
-
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
 }
 
 /*
@@ -252,32 +182,6 @@ img {
 
   .site-header .container {
     padding: 1.5rem 0;
-  }
-
-  .media--web {
-    padding: 1.5rem;
-    background: #efefef;
-  }
-
-}
-
-@media (min-width: $bp-l) {
-
-  .media {
-    margin-top: 3rem;
-
-    & + * {
-      margin-top: 3rem;
-    }
-
-    & + .caption {
-      margin-bottom: 3rem;
-    }
-
-  }
-
-  .media--web {
-    padding: 3rem;
   }
 
 }

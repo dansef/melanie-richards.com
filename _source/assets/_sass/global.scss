@@ -38,6 +38,25 @@ a:link, a:visited {
 }
 
 /*
+ *	UTILITIES
+ *	---------------------------------------------
+ */
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute !important;
+}
+
+.clear {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
  *	TYPE RAMP
  *	---------------------------------------------
  */
@@ -80,7 +99,8 @@ h3,
 }
 
 p, ul, ol {
-  margin-bottom: .625em;
+  margin: 0 0 .625em;
+  padding: 0;
 }
 
 /*
@@ -93,12 +113,6 @@ p, ul, ol {
   margin-left: auto;
   width: 100%;
   max-width: 100rem;
-}
-
-.clear {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .page-body {

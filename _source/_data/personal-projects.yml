@@ -1,0 +1,14 @@
+- title: Badass Lady Creatives
+  url: http://baladycreatives.com/
+  image: project-balc.svg
+  description: A blog I run that celebrates women in design and related fields.
+
+- title: Reading journal
+  url: https://github.com/melanierichards/reading-journal
+  image: project-reading-journal.svg
+  description: I track the articles I read in design, development, and other stuff, so that others can enjoy them.
+
+- title: 100 Days of Spec
+  url:
+  image: project-100daysspec.svg
+  description: I read the HTML specifications for 100 commutes and learned a whole bunch.

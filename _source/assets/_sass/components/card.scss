@@ -1,0 +1,58 @@
+/*
+ *	CARD
+ *  Example: personal projects on info
+ *	---------------------------------------------
+ */
+
+.cards {
+  list-style: none;
+}
+
+.card + .card {
+  margin-top: 1em;
+}
+
+.card > a {
+  border-bottom: 0;
+}
+
+.card__image {
+  display: block;
+}
+
+.card__title {
+  display: inline-block;
+  margin: .25em 0 .5em;
+  border-bottom: 1px solid;
+}
+
+.card__description {
+  margin: 0;
+  font-size: .825em;
+}
+
+/* All cards get floated at this point */
+@media (min-width: $bp-s) {
+
+  .cards {
+    margin: 0 -1em;
+    overflow: hidden;
+  }
+
+  .card {
+    float: left;
+    padding: 0 1em;
+    width: 50%;
+  }
+
+  .card:nth-child(-n+2) {
+    margin-top: 0;
+  }
+
+  .card:nth-child(2n+1) {
+    clear: left;
+  }
+
+}
+
+/* After small breakpoint, other layouts are context-dependent and not defined here */

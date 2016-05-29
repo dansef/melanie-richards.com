@@ -16,4 +16,5 @@ gems: [jekyll-paginate]
 markdown: kramdown
 source: _source
 sass:
-    sass_dir: assets/_sass
+  sass_dir: assets/_sass
+  style: compressed

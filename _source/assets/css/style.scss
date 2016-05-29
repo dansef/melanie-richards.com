@@ -7,7 +7,12 @@
 @import 'sass-helpers';
 @import 'fonts';
 @import 'global';
+
+@import 'components/social';
+@import 'components/card';
+
 @import 'header';
 
 @import 'pages/work';
+@import 'pages/info';
 @import 'pages/now';

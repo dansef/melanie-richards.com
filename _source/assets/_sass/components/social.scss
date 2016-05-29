@@ -1,0 +1,102 @@
+/*
+ *	SOCIAL ICONS LIST
+ *	---------------------------------------------
+ */
+
+.social {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin-right: .5em;
+  }
+
+}
+
+/* Override link border */
+.social__icon:link,
+.social__icon:visited {
+  border: 0;
+}
+
+.social__icon {
+  display: block;
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all ease-in-out 200ms;
+
+  svg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    left: 50%;
+    margin-left: -12px;
+    width: 24px;
+    height: 24px;
+
+    g, path {
+      fill: #fff;
+    }
+
+  }
+
+  &.twitter {
+    background: #55acee;
+  }
+
+  &.github {
+    background: #000;
+  }
+
+  &.goodreads {
+    background: #553b08;
+  }
+
+  &.instagram {
+    overflow: hidden;
+    background: #c13584;
+
+    /* Can't transition a gradient, booooo */
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, #405de6 0%, #833ab4 10%, #c13584 25%, #e1306c 50%, #f56040 75%, #fcaf45 100%);
+      opacity: 1;
+      transition: opacity ease-in-out 200ms;
+    }
+
+    svg {
+      z-index: 2;
+    }
+
+  }
+
+  &.dribbble {
+    background: #ea4c89;
+  }
+
+  &.linkedin {
+    background: #0077b5;
+  }
+
+  &:hover {
+    background: $color-brand;
+  }
+
+  &.instagram:hover:before {
+    opacity: 0;
+  }
+
+}

@@ -11,7 +11,7 @@
             {% if item.url contains 'page' %}
             {% elsif item.nav == true %}
               <li>
-                  <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+                  <a {% if page.url == item.url %}class="current"{% endif %} href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
               </li>
             {% endif %}
           {% endfor %}

@@ -7,12 +7,26 @@
   margin-bottom: 2rem;
 
   a {
+    position: relative;
     border-bottom: 0;
-    color: $color-headings-link;
+    color: $color-brand;
+    transition: color ease-in-out 200ms;
   }
 
-  a:hover {
-    color: $color-link-hover;
+  a:focus {
+    background: #f8d800;
+    color: #000;
+    transition: none;
+
+    &:before {
+      display: none;
+    }
+
+  }
+
+  a:hover, a:active, .current {
+    background: transparent;
+    color: #d63800;
   }
 
 }
@@ -66,7 +80,26 @@
     }
 
     a {
-      padding: .5rem;
+      padding: .5rem 1rem;
+    }
+
+    a:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: 50%;
+      margin-left: -3px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #d63800;
+      opacity: 0;
+      transition: opacity ease-in-out 200ms;
+    }
+
+    a:hover:before, a:active:before, .current:before {
+      opacity: 1;
     }
 
   }

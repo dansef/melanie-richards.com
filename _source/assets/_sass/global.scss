@@ -20,6 +20,15 @@ body {
   outline: 1px dashed #000;
 }
 
+::selection {
+	background: #f8d800;
+	color: #000;
+}
+::-moz-selection {
+	background: #f8d800;
+	color: #000;
+}
+
 a:link, a:visited {
   padding-bottom: .03em;
   border-bottom: $link-border-style;

@@ -141,6 +141,14 @@ span.pagination__newer {
   background-image: url('../images/newer.svg');
 }
 
+/*
+ *	COMMENTS
+ *	---------------------------------------------
+ */
+
+.comments {
+  @extend %limit-width;
+}
 
 /*
  *	MEDIA QUERIES

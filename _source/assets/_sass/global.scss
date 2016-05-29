@@ -22,19 +22,20 @@ body {
 
 a:link, a:visited {
   padding-bottom: .03em;
-  border-bottom: 1px solid;
+  border-bottom: $link-border-style;
   text-decoration: none;
   color: $color-link;
+  transition: background ease-in-out 200ms, border-color ease-in-out 200ms;
+}
 
-  &:hover {
-    border-bottom-width: 2px;
-    color: $color-link-hover;
-  }
+a:hover {
+  border-color: $color-link-hover-bg;
+  background: $color-link-hover-bg;
+  color: $color-link-hover;
+}
 
-  &:active {
-    color: $color-link-active;
-  }
-
+a:active {
+  color: $color-link-hover;
 }
 
 /*
@@ -75,7 +76,7 @@ h1, h2 {
   }
 
   a:active {
-    color: $color-link-active;
+    color: $color-link-hover;
   }
 
 }

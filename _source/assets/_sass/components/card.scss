@@ -18,16 +18,19 @@
 
 .card__image {
   display: block;
+  margin-bottom: .25em;
 }
 
 .card__title {
-  display: inline-block;
-  margin: .25em 0 .5em;
-  border-bottom: 1px solid;
+  border-bottom: $link-border-style;
+}
+
+a:hover .card__title {
+  border-bottom-color: $color-link-hover-bg;
 }
 
 .card__description {
-  margin: 0;
+  margin: .5em 0 0;
   font-size: .825em;
 }
 

@@ -9,15 +9,10 @@
   a {
     border-bottom: 0;
     color: $color-headings-link;
+  }
 
-    &:hover {
-      color: $color-headings-link-hover;
-    }
-
-    &:active {
-      color: $color-link-active;
-    }
-
+  a:hover {
+    color: $color-link-hover;
   }
 
 }

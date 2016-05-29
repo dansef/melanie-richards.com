@@ -6,7 +6,7 @@
   {% for post in site.posts limit:1 %}
     {% assign individualPost = false %}
     {% assign currentPost = post.url %}
-    {% include post-item.html %}
+    {% include post-contents.html %}
   {% endfor %}
   <section class="other-posts">
       <h2 class="title--icon">

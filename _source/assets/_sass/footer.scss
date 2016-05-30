@@ -1,0 +1,40 @@
+/*
+ *	SITE FOOTER
+ *	---------------------------------------------
+ */
+
+.site-footer {
+  border-top: 6px double $color-brand;
+}
+
+.site-footer__social {
+  margin-bottom: 0;
+
+  li {
+    margin-right: .25em;
+  }
+
+  .social__icon {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+
+    &:hover {
+      background: rgba(0,0,0,.1);
+    }
+
+    svg {
+      margin-top: -10px;
+      margin-left: -10px;
+      width: 20px;
+      height: 20px;
+
+      g, path {
+        fill: $color-brand;
+      }
+
+    }
+
+  }
+
+}

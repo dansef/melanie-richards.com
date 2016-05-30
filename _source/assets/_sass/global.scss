@@ -79,6 +79,10 @@ a:focus {
  *	---------------------------------------------
  */
 
+main {
+  margin-bottom: 3em;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -231,11 +235,12 @@ pre code {
 @media (min-width: $bp-m) {
 
   body {
-    padding: .5em 1.5em 1.5em;
+    padding: .5em 1.5em;
     font-size: 137.5%;
   }
 
-  .site-header .container {
+  .site-header .container,
+  .site-footer .container {
     padding: 1em 0;
   }
 

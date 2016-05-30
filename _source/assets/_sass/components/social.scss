@@ -1,5 +1,6 @@
 /*
  *	SOCIAL ICONS LIST
+ *  Footer social styles are in footer.scss
  *	---------------------------------------------
  */
 
@@ -23,8 +24,8 @@
 .social__icon {
   display: block;
   position: relative;
-  width: 2.5em;
-  height: 2.5em;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   cursor: pointer;
   transition: all ease-in-out 200ms;

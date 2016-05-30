@@ -9,17 +9,27 @@
     {% include post-contents.html %}
   {% endfor %}
   <section class="other-posts">
-      <h2 class="title--icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 30 26"><path fill="#F8D800" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" d="M23 24l-8-5.5L7 24V1h16z"/><path fill="none" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" d="M7 7h16"/></svg>
-        Also on the blog
-      </h2>
-      {% include posts-list.html %}
+    <h2 class="title--icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 30 26"><path fill="#F8D800" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" d="M23 24l-8-5.5L7 24V1h16z"/><path fill="none" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" d="M7 7h16"/></svg>
+      Also on the blog
+    </h2>
+    <ul class="posts-list">
+      {% for post in paginator.posts %}
+        {% if currentPost != post.url %}
+          {% include posts-list-item.html %}
+        {% endif %}
+      {% endfor %}
+    </ul>
   </section>
 
 <!-- ALL OTHER PAGES -->
 {% else %}
   <h2>Page {{paginator.page}} of the blog</h2>
-  {% include posts-list.html %}
+  <ul class="posts-list">
+    {% for post in paginator.posts %}
+      {% include posts-list-item.html %}
+    {% endfor %}
+  </ul>
 {% endif %}
 
 <!-- PAGINATION -->

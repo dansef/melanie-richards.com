@@ -4,7 +4,6 @@
  */
 
 .post__title {
-  margin-bottom: 1em;
 
   a:link, a:visited {
     display: inline-block;
@@ -44,6 +43,20 @@
   a:hover {
     border-color: $color-link-hover-bg;
     color: $color-link-hover;
+  }
+
+}
+
+.post__tags {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+
+  li + li {
+    margin-left: 1em;
   }
 
 }

@@ -5,7 +5,7 @@ Just a personal site, currently working on a redesign so things will look wonky 
 1. [Fork this repo](https://help.github.com/articles/fork-a-repo/).
 2. Make sure you have [Ruby installed](https://www.ruby-lang.org/en/documentation/installation/) on your machine.
 3. Via the command line, navigate to the project.
-4. Install Jekyll (and Jekyll pagination) by running `gem install jekyll` and `gem jekyll-paginate`.
+4. Install Jekyll (and Jekyll plugins) by running `gem install jekyll`, `gem jekyll-paginate`, and `gem jekyll-archives`.
 5. Make any changes you'd like in the `_source` directory and run `jekyll build` from your command line.
 6. From the project folder, run `jekyll serve`.
 7. Visit `http://localhost:40000` in your browser.

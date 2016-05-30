@@ -1,3 +1,8 @@
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-archives
+
 # Site settings
 title: Melanie Richards | Seattle web design and development
 email: hello@melanie-richards.com
@@ -9,8 +14,13 @@ paginate: 16
 paginate_path: "/blog/page:num/"
 permalink: /blog/:title/
 
-# Gems
-gems: [jekyll-paginate]
+jekyll-archives:
+  enabled:
+  - year
+  - tags
+  permalinks:
+    year: '/blog/:year/'
+    tag: '/blog/tag/:name/'
 
 # Build settings
 markdown: kramdown

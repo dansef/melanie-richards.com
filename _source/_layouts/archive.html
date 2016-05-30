@@ -1,0 +1,16 @@
+{% include head.html %}
+{% include header.html %}
+
+{% if page.date %}
+  <h1>Posts from {{ page.date | date: "%Y" }}</h1>
+{% else %}
+  <h1>Posts tagged "{{ page.title }}"</h1>
+{% endif %}
+
+<ul class="posts-list">
+  {% for post in page.posts %}
+    {% include posts-list-item.html %}
+  {% endfor %}
+</ul>
+
+{% include footer.html %}

@@ -1,0 +1,6 @@
+<li class="post-item">
+  <time class="meta post-item__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+  <a class="post-item__title" href="{{ post.url }}">
+    <span>{{ post.title }}</span>
+  </a>
+</li>

@@ -9,6 +9,6 @@
   description: I track the articles I read in design, development, and other stuff, so that others can enjoy them.
 
 - title: 100 Days of Spec
-  url:
+  url: /blog/tag/100daysofspec/
   image: project-100daysspec.svg
   description: I read the HTML specifications for 100 commutes and learned a whole bunch.

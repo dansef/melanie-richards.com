@@ -20,3 +20,62 @@
   }
 
 }
+
+/*
+ *  GOODREADS WIDGET
+ *	---------------------------------------------
+ */
+
+[class*="gr_custom_header"] {
+  display: none;
+}
+
+[class*="gr_custom_each_container"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 .5em .5em 0;
+
+  a {
+    display: block;
+    padding-bottom: 0;
+    border: 2px solid transparent;
+  }
+
+  a:hover {
+    border-color: $color-brand;
+  }
+
+}
+
+.now-books {
+  br, center {
+    display: none;
+  }
+}
+
+/*
+ *	MEDIA QUERIES
+ *	---------------------------------------------
+ */
+
+@media (min-width: $bp-m) {
+
+  [class*="gr_custom_each_container"] {
+    margin: 0 1em 1em 0;
+  }
+
+}
+
+@media (min-width: $bp-l) {
+
+  .now-content,
+  .now-books {
+    float: left;
+    width: 46%;
+  }
+
+  .now-books {
+    float: right;
+  }
+
+}

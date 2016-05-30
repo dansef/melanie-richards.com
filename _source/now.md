@@ -6,12 +6,6 @@ nav: true
 order: 4
 ---
 
-<img src="{{ site.images }}/now-m.jpg" srcset="{{ site.images }}/now-xxl.jpg 1200w, {{ site.images }}/now-l.jpg 800w, {{ site.images }}/now-m.jpg 600w, {{ site.images }}/now-s.jpg 1w" alt="A wall of sake barrels, decorated with various illustrations" />
-{: .media}
-
-A wall of sake barrels at Meiji Shrine, Tokyo, from a recent trip to Japan.
-{: .caption}
-
 <h2 class="title--icon">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#F8D800" d="M12 23C5.9 23 1 18.1 1 12S5.9 1 12 1s11 4.9 11 11-4.9 11-11 11z"/><path fill="#231F20" d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m0-2C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0z"/><polyline fill="none" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" points="11,6 11,15 17,12"/></svg>
   What I'm focused on right now

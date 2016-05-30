@@ -4,10 +4,30 @@
 <h1 class="page-title">Now</h1>
 
 <div class="page-body">
-  {{ content }}
+
+  <img class="media" src="{{ site.images }}/now-m.jpg" srcset="{{ site.images }}/now-xxl.jpg 1200w, {{ site.images }}/now-l.jpg 800w, {{ site.images }}/now-m.jpg 600w, {{ site.images }}/now-s.jpg 1w" alt="A wall of sake barrels, decorated with various illustrations" />
+  <p class="caption">A wall of sake barrels at Meiji Shrine, Tokyo, from a recent trip to Japan.</p>
+
+  <div class="clear">
+    <div class="now-content">
+      {{ content }}
+    </div>
+    <div class="now-books">
+      <h2>Currently reading</h2>
+      <script src="https://www.goodreads.com/review/custom_widget/2236850.Currently%20reading?cover_position=middle&cover_size=medium&num_books=20&order=a&shelf=currently-reading&show_author=0&show_cover=1&show_rating=0&show_review=0&show_tags=0&show_title=0&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=1&widget_id=1464588565&widget_text_color=000000&widget_title_size=medium&widget_width=medium" type="text/javascript" charset="utf-8"></script>
+      <noscript>
+        <p>Please enable Javascript in your browser to see a list of my current books.</p>
+      </noscript>
+      <p class="caption">
+        <a href="https://www.goodreads.com/user/show/2236850-melanie-richards">See more of my books on Goodreads</a>
+      </p>
+    </div>
+  </div>
+
   <div class="now-credit">
     <p>This page was inspired by <a href="http://www.jamestgreen.com/now">James T. Green</a>, who was inspired by <a href="https://sivers.org/nowff">Derek Sivers</a>.</p>
   </div>
+
 </div>
 
 {% include footer.html %}

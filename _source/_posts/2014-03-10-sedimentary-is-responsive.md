@@ -9,7 +9,7 @@ tags:
 ---
 
 [![Sedimentary screenshot]({{ site.images }}/melanierichards-sedimentary.jpg)](http://readsedimentary.com/)
-{: .web-frame}
+{: .media.media--web}
 
 My poetry and prose blog, [Sedimentary](http://readsedimentary.com/), is now responsive! It’s actually the most basic layout ever—just post stacked on top of post—but the CSS hasn’t seen any love since four-ish years ago. I’d like to start writing more fiction, so I thought it might help with motivation to do some spring cleaning: changing to wide posts from columns to support longer-format writing, Freight Text’ing it up, and actually buying [a domain name](http://readsedimentary.com/).
 

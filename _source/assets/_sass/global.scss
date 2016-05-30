@@ -91,8 +91,8 @@ a:focus {
 }
 
 %limit-width {
-  max-width: 640px; /* Browsers that don't support rem */
-  max-width: 40rem;
+  max-width: 800px; /* Browsers that don't support rem */
+  max-width: 50rem;
 }
 
 /*
@@ -126,11 +126,10 @@ h2,
 }
 
 h3,
-.subsection-title,
-.meta-title {
-  margin-top: 2em;
+.subsection-title {
+  margin: 1.5em 0 .75em;
   @include all-caps;
-  font-weight: 400;
+  font-weight: 500;
   font-size: .925em;
   color: $color-headings;
 }
@@ -153,16 +152,24 @@ li > ol {
   margin: .25em 0 0;
 }
 
-strong, b {
-  font-weight: 500;
-}
-
 /* Feels a little bit icky but eh,
    probably better than scoping to a content class */
 %nonstandard-list {
   padding-left: 0;
   list-style: none;
   max-width: 100%;
+}
+
+strong, b {
+  font-weight: 500;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: $line-style;
+  font-style: italic;
+  color: $color-brand;
 }
 
 button,
@@ -194,10 +201,32 @@ button:active,
   opacity: .8;
 }
 
+pre {
+  margin: 1.5em 0;
+}
+
+pre code {
+  display: block;
+  border: 3px solid #bbb;
+  border-color: rgba(0,0,0,.25);
+  padding: 1em;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
 /*
  *	MEDIA QUERIES
  *	---------------------------------------------
  */
+
+@media (min-width: $bp-s) {
+
+  blockquote {
+    margin: 1.25em 0 1.25em 1.25em;
+    padding-right: 2.25em; /* Need to place right margin on padding, since width is limited */
+  }
+
+}
 
 @media (min-width: $bp-m) {
 
@@ -208,15 +237,6 @@ button:active,
 
   .site-header .container {
     padding: 1em 0;
-  }
-
-}
-
-@media (min-width: $bp-xl) {
-
-  %limit-width {
-    max-width: 800px; /* Browsers that don't support rem */
-    max-width: 50rem;
   }
 
 }

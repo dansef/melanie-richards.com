@@ -20,7 +20,6 @@ I’d never been to Tulsa before, or anywhere near Oklahoma for that matter, and
 
 We toured the studios and met members of [Fire Thief](https://vimeo.com/firethief), [Loose Leaf](http://looseleafco.tumblr.com/), and [Rough House](http://roughhousecreative.com/); popped into [Circle Cinema](http://www.circlecinema.com/); heard about the amazing things [Tulsa Glassblowing School](http://www.tulsaglassblowing.org/) is doing for local youth; browsed locally-made and vintage curiosities at [Dwelling Spaces](http://www.dwellingspaces.net/); gawked at shmancy stonework downtown; shot a quick interview video at [Hogan Assessments](http://www.hoganassessments.com/); and contemplated art at [AHHA](https://ahhatulsa.org/) and [108 Contemporary](http://108contemporary.org/).
 
- 
 ![Circular tapestry by Analise Stukenborg and weaving by Sarah Sullivan that looks vaguely like an American flag]({{ site.images }}/weavings.jpg)
 {: .media}
 
@@ -29,7 +28,6 @@ Left: "Grace" by Analise Stukenborg, right: "New Country" by Sarah Sullivan
 
 There was so much good art in both those galleries, but I was especially excited to see fiber art alive and well in the heartland. The show at 108 Contemporary included excellent weavings by [Sarah Sullivan](http://sarahesullivan.tumblr.com/) and [Analise Stukenborg](https://www.instagram.com/analiseface/), and a giant knit mural by [Romy Owens](http://www.romyowens.com/). Romy mocked up the mural digitally and then divvied up the panels for people to knit. It’s an impressive piece, both in concept and in scale. I feel fired up to start some new weaving ideas!
 
- 
 ![Romy Owens's knit mural landscape, from outside and inside the gallery]({{ site.images }}/romyowens-knitmural.jpg)
 {: .media}
 

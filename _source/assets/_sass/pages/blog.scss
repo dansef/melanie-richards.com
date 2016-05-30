@@ -67,6 +67,11 @@
   border-top: $line-style;
 }
 
+.footnotes {
+  margin-top: 1.5em;
+  @extend .meta;
+}
+
 /*
  *	POSTS LIST
  *	---------------------------------------------

@@ -9,6 +9,7 @@ tags:
 ---
 
 [![Badass Lady Creatives on Pinterest]({{ site.images }}/melanierichards-baladycreatives-screenshot.jpg)](http://pinterest.com/BAladycreatives/boards/)
+{: .media.media--web}
 
 I&rsquo;m pleased to announce that [Badass Lady Creatives](http://pinterest.com/BAladycreatives/boards/) is a thing that exists on the Internet! In the recent past there&rsquo;s been some drama about lack of female speakers and panelists at conferences in the creative/tech industries. What often goes unnoticed—and which I find more telling—are the small, pervasive ways in which praise, accolades, and respect are unevenly distributed.
 

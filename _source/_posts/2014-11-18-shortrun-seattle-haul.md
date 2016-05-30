@@ -29,21 +29,25 @@ A few items from John Porcellino's table—he's a distributor for other people's
 {: .caption}
 
 ![Photo of comics]({{ site.images }}/melanierichards-shortrun-haul5.jpg)
+{: .media}
 
 Björn, Pam Wishbow, Kazimir Strzepek
 {: .caption}
 
 ![Photo of comics]({{ site.images }}/melanierichards-shortrun-haul6.jpg)
+{: .media}
 
 A bunch of little guys from James Stanton
 {: .caption}
 
 ![Photo of comics]({{ site.images }}/melanierichards-shortrun-haul2.jpg)
+{: .media}
 
 Issues of the ever-free comics quarterly, The Intruder. Apparently these guys do some cool stuff in the comics community around town, as well.
 {: .caption}
 
 ![Photo of book]({{ site.images }}/melanierichards-shortrun-haul8.jpg)
+{: .media}
 
 The only non-comics book I bought. It's a mix of photos and poems–half of which are in Japanese, which I don't read–and what I suspect is magic. All by Yoshinori Henguchi.
 {: .caption}

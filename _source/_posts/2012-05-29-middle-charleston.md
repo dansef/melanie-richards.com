@@ -11,3 +11,4 @@ tags:
 Just finished reading _The Hobbit_ this past weekend. I love the silly maps that preface British adventure lit, so here’s Middle-Charleston.
 
 ![Map of Charleston]({{ site.images}}/melanierichards-middle-charleston.jpg)
+{: .media}

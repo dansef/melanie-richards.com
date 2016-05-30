@@ -43,7 +43,7 @@ Oh my, this was a special conference. [WMC Fest](http://wmcfest.com/) is one of 
 ## Working, working, working
 
 [![A screenshot of The Green Heart Project website]({{ site.images }}/melanierichards-thegreenheartproject.png)](http://greenheartsc.org/)
-{: .web-frame}
+{: .media.media--web}
 
 Branding, illustration, and web design for The Green Heart Project.
 {: .caption}
@@ -53,7 +53,7 @@ Of course, this whole time I've also been working. While I can't show a lot of F
 ## Interview on the Metis Blog
 
 [![Screenshot of Metis interview]({{ site.images }}/metis.png)](http://www.thisismetis.com/blog/interview-designer-melanie-richards)
-{: .web-frame}
+{: .media.media--web}
 
 Semi-recently, the lovely House [interviewed me](http://www.thisismetis.com/blog/interview-designer-melanie-richards) for the Metis blog. It was fun to share a little bit about how I got into web design and front-end development, which might be helpful to beginning web creatives taking Metis&rsquo;s courses.
 

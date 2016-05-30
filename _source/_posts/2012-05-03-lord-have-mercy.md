@@ -15,22 +15,22 @@ I’ve been thinking a lot lately about my discovery of HTML, right around sixth
 Thanks to [Wayback Machine](http://web.archive.org), I can finally show off the travesty I was making in the early days of user-generated web (and would love to see your tragic firsts too!).
 
 ![Expage screenshot]({{ site.images}}/melanierichards_homepage.jpg)
-{: .web-frame}
+{: .media.media--web}
 
 Here we have [expage.com/glowygirl](http://web.archive.org/web/20021008041711/http://www.expage.com/glowygirl ), my very first website. At the time I hadn’t heard of Geocities or Angelfire, so in order to build a site on Expage I had to register one page at a time. I’m guessing the empty box had an image that wasn’t cached. Fruity Raindrops was the successor, the pinnacle of my pre-teen sites, if you could call it that. Sadly the Wayback Machine didn’t save much from there.
 
 ![Expage screenshot]({{ site.images}}/melanierichards_menu.jpg)
-{: .web-frame}
+{: .media.media--web}
 
 The content menu. Yes, that background is animated. All girly websites at the time had Me, You, and Fun Stuff sections. If you were “creative,” you named them something interesting. Apparently I deemed myself ~*~ The Princess ~*~
 
 ![Expage screenshot]({{ site.images}}/melanierichards_pagenames.jpg)
-{: .web-frame}
+{: .media.media--web}
 
 Page name suggestions! If you can read them.
 
 ![Expage screenshot]({{ site.images}}/melanierichards_award.jpg)
-{: .web-frame}
+{: .media.media--web}
 
 Apparently I was cool enough to distribute awards. Yay for circa-2002 marketing tactics.
 

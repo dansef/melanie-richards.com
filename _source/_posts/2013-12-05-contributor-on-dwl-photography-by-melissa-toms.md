@@ -8,7 +8,7 @@ tags:
 ---
 
 [![Design Work Life]({{ site.images }}/melanierichards-ondwl.png)](http://www.designworklife.com/2013/12/04/introducing-melanie/)
-{: .web-frame}
+{: .media.media--web}
 
 Happy to announce that starting next Wednesday, I’ll be posting weekly on [Design Work Life](http://www.designworklife.com/2013/12/04/introducing-melanie/). My series is essentially an extension of [Badass Lady Creatives](http://baladycreatives.com/) (not-so-coincidentally, [that site](http://baladycreatives.com/) also launched yesterday), a project that I run which celebrates professional women in the creative industries. On DWL, I’ll be posting interviews, round-ups, badass women in history, and other lady creative news. It’s been interesting working from a social-media-first approach, but I’m so happy to have a permanent home for more robust posting.
 

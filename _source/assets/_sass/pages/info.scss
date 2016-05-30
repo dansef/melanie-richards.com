@@ -3,15 +3,16 @@
  *	---------------------------------------------
  */
 
-.illustrated-photo {
+.bio-photo {
   margin-bottom: 1em;
-  width: 320px;
+  width: 100%;
   text-align: center;
 
   img {
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    max-width: 100%;
+    height: height;
     border-radius: 50%;
   }
 
@@ -86,18 +87,12 @@
 
 }
 
-@media (min-width: $bp-m) {
+@media (min-width: 30em) and (max-width: $bp-l) {
 
-  .bio-section {
-    position: relative;
-    padding-left: 280px;
-  }
-
-  .illustrated-photo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 240px;
+  .bio-photo {
+    float: left;
+    margin: .5em 1em .5em 0;
+    width: 5em;
   }
 
 }
@@ -114,17 +109,20 @@
     padding-left: 320px; /* absolutely-positioned thingy */
   }
 
-  .illustrated-photo,
+  .bio-photo,
   .info-section__title {
+    position: absolute;
+    left: 0;
+    margin: 0;
     width: 320px;
+  }
 
+  .bio-photo {
+    top: .25em;
   }
 
   .info-section__title {
-    position: absolute;
     top: -.5em;
-    left: 0;
-    margin: 0;
     padding: 0 2em;
     background: #fff;
     text-align: center;

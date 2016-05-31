@@ -12,7 +12,7 @@
   color: $color-brand;
 
   a:link, a:visited {
-    border-bottom: 4px solid;
+    border-color: currentColor;
     color: inherit;
   }
 
@@ -113,6 +113,14 @@
 }
 
 @media (min-width: $bp-l) {
+
+  .work-title {
+
+    a:link, a:visited {
+      border-bottom-width: 4px;
+    }
+
+  }
 
   .project-info {
     margin: 3em auto;

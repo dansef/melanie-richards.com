@@ -61,12 +61,6 @@
 
 }
 
-.comment-btn-wrap {
-  margin-top: 1em;
-  padding-top: .5em;
-  border-top: $line-style;
-}
-
 .footnotes {
   margin-top: 1.5em;
   @extend .meta;
@@ -191,10 +185,6 @@ span.pagination__newer {
 
   .post__date {
     margin-right: 1em;
-  }
-
-  .comment-btn-wrap {
-    margin-top: 1.5em;
   }
 
   .post-item__title {

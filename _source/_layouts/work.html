@@ -6,5 +6,15 @@
   Here's a small sampling of the kind of thing I do:
 </p>
 
+{% assign sorted_items = site.work | sort:"order" %}
+{% for item in sorted_items %}
+  <div class="work-tile{% if item.theme == 'dark' %} work-tile--dark{% endif %} media{% if item.feature-type == 'web' %} media--web{% endif %}"{% if item.bg %} style="background-color: {{ item.bg}};"{% endif %}>
+    {% include responsive-image.html border=item.web-frame baseSrc=item.feature-src ext=item.feature-ext max=item.feature-max-size alt='Project preview image' %}
+    <p class="section-title work-tile__title">{{ item.title }}</p>
+    <p class="work-tile__role">{{item.role | capitalize }}</p>
+    <a class="btn" href="{{ item.url | prepend: site.baseurl }}">View project</a>
+  </div>
+{% endfor %}
+
 <div class="work-stream">{{ content }}</div>
 {% include footer.html %}

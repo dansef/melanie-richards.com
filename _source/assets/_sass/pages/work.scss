@@ -23,19 +23,108 @@
 
 }
 
-.work-stream {
+/*
+ *	WORK TILES
+ *	---------------------------------------------
+ */
 
-  .vimeo {
-    margin: 0 auto;
-    max-width: 800px;
+.work-tile {
+  padding: .75em .75em 1.5em;
+  text-align: center;
+  color: #000;
+
+  .btn {
+    border-color: #000;
+    color: #000;
+
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+
+  }
+
+  img {
+    margin-right: auto;
+    margin-left: auto;
   }
 
 }
+
+.work-tile--dark {
+  color: #fff;
+
+  .btn {
+    border-color: #fff;
+    color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
+
+  }
+
+}
+
+.work-tile__title,
+.work-tile__role {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.work-tile__title {
+  margin-bottom: .25em;
+}
+
+.work-tile__role {
+  margin-bottom: 1em;
+  font-size: .825em;
+}
+
+/*
+ *	PORTFOLIO PIECE PAGES
+ *	---------------------------------------------
+ */
+
+.project-info {
+  padding-bottom: 1em;
+  border-top: 6px double $color-brand;
+  border-bottom: $line-style;
+  width: 100%;
+}
+
+ /*
+  *	MEDIA QUERIES
+  *	---------------------------------------------
+  */
 
 @media (min-width: $bp-m) {
 
   .work-title {
     margin-bottom: .75em;
+  }
+
+  .work-tile {
+    padding: 2em;
+    padding: 4vw;
+  }
+
+}
+
+@media (min-width: $bp-l) {
+
+  .project-info {
+    margin: 3em auto;
+  }
+
+  .project-info__col {
+    float: left;
+    width: 31%;
+  }
+
+  .project-info__col + .project-info__col {
+    margin-left: 3.5%;
   }
 
 }

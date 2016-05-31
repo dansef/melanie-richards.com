@@ -1,0 +1,75 @@
+{% include head.html %}
+{% include header.html %}
+
+<h1>{{ page.title }}</h1>
+
+{% unless page.special-type == "misc" %}
+
+  <!-- FEATURE IMAGE -->
+  <div class="media{% if page.feature-type == 'web' %} media--web{% endif %}">
+    {% include responsive-image.html baseSrc=page.feature-src ext=page.feature-ext max=page.feature-max-size alt='Project preview image' %}
+  </div>
+
+  <!-- PROJECT INFO -->
+  <div class="clear project-info">
+    <div class="project-info__col">
+      <p class="subsection-title">Project</p>
+      <p>{{ page.description }}</p>
+    </div>
+    <div class="project-info__col">
+      <p class="subsection-title">Role</p>
+      <p>{{ page.role | capitalize }}</p>
+      <p>{{ page.year }}{% if page.attribution %} &middot; {{ page.attribution }}{% endif %}</p>
+    </div>
+    {% if page.fun-fact or page.press %}
+      <div class="project-info__col">
+        {% if page.fun-fact %}
+          <p class="subsection-title">Fun fact</p>
+          <p>{{ page.fun-fact }}</p>
+        {% endif %}
+        {% if page.press %}
+          <p class="subsection-title">Press</p>
+          <ul>
+            {% for item in page.press %}
+              <li>
+                <a href="{{ item.url }}">{{ item.publication }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+
+{% endunless %}
+
+<!-- OTHER MEDIA -->
+<div class="project-contents">
+  {{ content }}
+</div>
+
+<!-- PROJECT ACTIONS -->
+{% if page.live-url %}
+  <div class="page-btn-wrap">
+    <a class="btn" href="{{ page.live-url }}">View live</a>
+  </div>
+{% endif %}
+
+<!-- OTHER PROJECTS -->
+<section>
+  <h2>Other projects</h2>
+  <ul class="related-list">
+    {% assign sorted_items = site.work | sort:"order" %}
+    {% for item in sorted_items %}
+      {% if item.url != page.url %}
+        <li class="related-item">
+          <a class="related-item__title" href="{{ item.url }}">
+            <span>{{ item.title }}</a>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+
+{% include footer.html %}

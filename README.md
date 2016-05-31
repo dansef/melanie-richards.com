@@ -11,3 +11,12 @@ Just a personal site, currently working on a redesign so things will look wonky 
 7. Visit `http://localhost:40000` in your browser.
 
 Note: in an effort to 1) reduce binary file bloat and 2) avoid distributing stuff that shouldn't be distributed, there are a few things that will be missing in your local copy, such as fonts and images.
+
+## Notes to self
+
+### Image sizes
+
+* s: 500px wide
+* m: 800px wide
+* l: 1200px wide
+* xl: up to 2000px wide

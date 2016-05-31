@@ -5,7 +5,9 @@
 
 <div class="page-body">
 
-  <img class="media" src="{{ site.images }}/now-m.jpg" srcset="{{ site.images }}/now-xxl.jpg 1200w, {{ site.images }}/now-l.jpg 800w, {{ site.images }}/now-m.jpg 600w, {{ site.images }}/now-s.jpg 1w" alt="A wall of sake barrels, decorated with various illustrations" />
+  <div class="media">
+    {% include responsive-image.html border=item.web-frame baseSrc='now' ext='jpg' max='xl' alt='A wall of sake barrels, decorated with various illustrations' %}
+  </div>
   <p class="caption">A wall of sake barrels at Meiji Shrine, Tokyo, from a recent trip to Japan.</p>
 
   <div class="clear">

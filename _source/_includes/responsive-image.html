@@ -1,0 +1,12 @@
+{% assign imageDir = site.images %}
+{% assign thisSrc = include.baseSrc %}
+{% assign fullBaseSrc = imageDir | append: '/' | append: thisSrc %}
+
+<picture>
+  {% if include.max == 'xl' %}
+    <source media="(min-width: 1201px)" srcset="{{ fullBaseSrc }}-xl.{{ include.ext }}">
+  {% endif %}
+  <source media="(min-width: 801px)" srcset="{{ fullBaseSrc }}-l.{{ include.ext }}">
+  <source media="(min-width: 501px)" srcset="{{ fullBaseSrc }}-m.{{ include.ext }}">
+  <img src="{{ fullBaseSrc }}-s.{{ include.ext }}" alt="{{ include.alt }}" {% if include.border %}style="border-color: {{ include.border}};"{% endif %}>
+</picture>

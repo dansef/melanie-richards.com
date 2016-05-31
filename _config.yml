@@ -22,6 +22,18 @@ jekyll-archives:
     year: '/blog/:year/'
     tag: '/blog/tag/:name/'
 
+# Custom collections
+collections:
+  work:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: work
+    values:
+      layout: portfolio-piece
+
 # Build settings
 markdown: kramdown
 source: _source

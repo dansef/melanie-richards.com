@@ -1,0 +1,18 @@
+/*
+ *	PAGE BUTTON
+ *	---------------------------------------------
+ */
+
+.page-btn-wrap {
+  margin-top: 1em;
+  padding-top: .5em;
+  border-top: $line-style;
+}
+
+@media (min-width: $bp-m) {
+
+  .page-btn-wrap {
+    margin-top: 1.5em;
+  }
+
+}

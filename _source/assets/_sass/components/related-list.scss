@@ -1,0 +1,40 @@
+/*
+ *	RELATED LIST
+ *	---------------------------------------------
+ */
+
+.related-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.related-item {
+  margin-bottom: .75em;
+}
+
+a.related-item__title {
+  border-bottom: 0;
+  color: $color-brand;
+
+  span {
+    border-bottom: 2px solid currentColor;
+  }
+
+}
+
+.related-item__title:hover,
+.related-item__title:active {
+
+  span {
+    border-color: $color-link-hover-bg;
+  }
+
+}
+
+.related-item__title:focus {
+
+  span {
+    border-color: $color-focus-bg;
+  }
+
+}

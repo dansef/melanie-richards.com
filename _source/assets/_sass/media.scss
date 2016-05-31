@@ -24,6 +24,7 @@ embed {
 .vimeo {
   position: relative;
   padding-bottom: 56.25%;
+  max-width: 960px;
 
   iframe {
     position: absolute;
@@ -31,6 +32,10 @@ embed {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  + .caption {
+    margin-top: .75em;
   }
 
 }
@@ -73,6 +78,20 @@ embed {
  *	MEDIA QUERIES
  *	---------------------------------------------
  */
+
+/* Make website previews less scrollerific */
+@media (min-width: $bp-l) and (max-height: 60em) {
+
+  .media--web {
+
+    img {
+      width: 100%;
+      max-width: 64rem;
+    }
+
+  }
+
+}
 
 @media (min-width: $bp-m) {
 

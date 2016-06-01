@@ -5,6 +5,11 @@
 
 .site-footer {
   border-top: 6px double $color-brand;
+
+  .container {
+    padding-top: 1em;
+  }
+
 }
 
 .site-footer__social {
@@ -35,6 +40,27 @@
 
     }
 
+  }
+
+}
+
+.site-footer__weather {
+  @extend .caption;
+}
+
+@media (min-width: $bp-m) {
+
+  .site-footer .container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .site-footer__weather {
+    -webkit-flex: 1;
+    flex: 1;
+    max-width: none;
   }
 
 }

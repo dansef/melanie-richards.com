@@ -176,15 +176,20 @@ span.pagination__newer {
     margin-bottom: 0;
   }
 
+  .post__date {
+    margin-right: 1em;
+  }
+
   .post-item__date,
   .post-item__title {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
   }
 
   .post-item__date {
     margin-right: 1em;
-    width: 5em;
+    width: 6em;
   }
 
   .post-item__title {

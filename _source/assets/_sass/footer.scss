@@ -19,12 +19,9 @@
     color: inherit;
   }
 
-  a:hover {
-    color: $color-link-hover;
-  }
-
+  a:hover,
   a:active {
-    color: $color-link-focus;
+    color: $color-link-hover;
   }
 
 }

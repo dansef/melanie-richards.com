@@ -7,6 +7,28 @@
   border-top: 6px double $color-brand;
 }
 
+.site-footer .container {
+  padding-top: 1em;
+}
+
+.site-footer__post {
+  @extend .caption;
+
+  a:link, a:visited {
+    border-bottom: 1px solid currentColor;
+    color: inherit;
+  }
+
+  a:hover {
+    color: $color-link-hover;
+  }
+
+  a:active {
+    color: $color-link-focus;
+  }
+
+}
+
 .site-footer__social {
   margin-bottom: 0;
 
@@ -19,7 +41,8 @@
     height: 40px;
     background: transparent;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: rgba(0,0,0,.1);
     }
 
@@ -35,6 +58,24 @@
 
     }
 
+  }
+
+}
+
+@media (min-width: $bp-m) {
+
+  .site-footer .container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .site-footer__post {
+    margin: 0 1em 0 0;
+    -webkit-flex: 1;
+    flex: 1;
+    max-width: none;
   }
 
 }

@@ -1,14 +1,14 @@
 {% include head.html %}
 {% include header.html %}
 
-<h1 class="page-title">Now</h1>
+<h1 class="page-title">{{ page.title }}</h1>
 
 <div class="page-body">
 
-  <div class="media">
-    {% include responsive-image.html border=item.web-frame baseSrc='now' ext='jpg' max='xl' alt='A wall of sake barrels, decorated with various illustrations' %}
+  <div class="now-image">
+    {% include responsive-image.html border=item.web-frame baseSrc=page.feature-src ext=page.feature-ext max=page.feature-max-size alt=page.feature-alt %}
   </div>
-  <p class="caption">A wall of sake barrels at Meiji Shrine, Tokyo, from a recent trip to Japan.</p>
+  <p class="caption now-caption">{{ page.feature-caption }}</p>
 
   <div class="clear">
     <div class="now-content">

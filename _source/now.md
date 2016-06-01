@@ -4,6 +4,11 @@ title: Now
 permalink: /now/
 nav: true
 order: 4
+feature-src: now
+feature-ext: jpg
+feature-max-size: xl
+feature-alt: A wall of sake barrels, decorated with various illustrations
+feature-caption: A wall of sake barrels at Meiji Shrine, Tokyo, from a recent trip to Japan.
 ---
 
 <h2 class="title--icon">

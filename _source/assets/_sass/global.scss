@@ -72,6 +72,7 @@ a:focus {
   content: "";
   display: table;
   clear: both;
+  width: 100%;
 }
 
 /*
@@ -80,7 +81,7 @@ a:focus {
  */
 
 main {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .container {
@@ -238,6 +239,10 @@ pre code {
   body {
     padding: .5em 1.5em;
     font-size: 137.5%;
+  }
+
+  main {
+    margin-bottom: 3em;
   }
 
   .site-header .container,

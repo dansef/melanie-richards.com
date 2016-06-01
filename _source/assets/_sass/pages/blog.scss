@@ -80,15 +80,8 @@
   margin-bottom: .75em;
 }
 
-.post-item__date,
-.post-item__title {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .post-item__date {
-  margin-right: 1em;
-  width: 5em;
+  display: block;
 }
 
 a.post-item__title {
@@ -167,7 +160,7 @@ span.pagination__newer {
  *	---------------------------------------------
  */
 
-@media (min-width: $bp-m) {
+@media (min-width: $bp-s) {
 
   .post {
     margin-bottom: 3em;
@@ -183,8 +176,15 @@ span.pagination__newer {
     margin-bottom: 0;
   }
 
-  .post__date {
+  .post-item__date,
+  .post-item__title {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .post-item__date {
     margin-right: 1em;
+    width: 5em;
   }
 
   .post-item__title {

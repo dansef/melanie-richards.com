@@ -8,9 +8,8 @@
   @extend %nonstandard-list;
 
   li {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: .5em;
+    float: left;
+    margin: 0 .5em .5em 0;
   }
 
 }
@@ -98,6 +97,15 @@
 
   &.instagram:hover:before {
     opacity: 0;
+  }
+
+}
+
+/* Don't want these to wrap ugly on smaller screens */
+@media (max-width: $bp-s) {
+
+  .social li:nth-child(3n+1) {
+    clear: left;
   }
 
 }

@@ -23,6 +23,10 @@
 
 }
 
+.index-link {
+  display: inline-block;
+}
+
 .brand,
 .site-name {
   display: inline-block;
@@ -40,13 +44,13 @@
 }
 
 .site-nav {
-  margin-top: 1em;
+  margin-top: .75em;
   border-top: $line-style;
   border-bottom: $line-style;
 
   ul {
     @extend %nonstandard-list;
-    margin: 0 0 0 -.75em;
+    margin: 0;
   }
 
   li {

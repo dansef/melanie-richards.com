@@ -10,4 +10,4 @@ Hi, I'm Melanie Richards. I make mostly websites, mostly using design and code. 
 
 ## Get in touch
 
-The best way to say hi is at hello@melanierichards.design, or <a href="http://twitter.com/somelaniesaid">@somelaniesaid</a> on Twitter. I work full-time, but I'm interested in the occasional moonlighting project or collaboration; [see my now page](/now) for details.
+The best way to say hi is at mr@melanie-richards.com, or <a href="http://twitter.com/somelaniesaid">@somelaniesaid</a> on Twitter. I work full-time, but I'm interested in the occasional moonlighting project or collaboration; [see my now page](/now) for details.
